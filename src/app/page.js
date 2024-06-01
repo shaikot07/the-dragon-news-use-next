@@ -1,13 +1,11 @@
-import Image from "next/image";
+import React from 'react';
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-      <div className="w-6xl mx-auto">
-        <h1 className="text-4xl text-center text-orange-500">This is a The Dragon News Project Main Home pages</h1>
-        <h3 className="text-2xl text-purple-800">populer news... </h3>
-      </div>
-    </main>
+    <div>
+      <h1>this is a home pages</h1>
+    </div>
   );
-}
+};
+
+export default HomePage;
