@@ -47,19 +47,19 @@ const Footer = () => {
                     }}>
 
                     <IconButton >
-                        <FacebookIcon />
+                        <FacebookIcon className='hover:text-[#FD0004]'/>
                     </IconButton>
                     <IconButton >
-                        <TwitterIcon />
+                        <TwitterIcon className='hover:text-[#FD0004]'/>
                     </IconButton>
                     <IconButton >
-                        <YouTubeIcon />
+                        <YouTubeIcon className='hover:text-[#FD0004]'/>
                     </IconButton>
                     <IconButton >
-                        <LinkedInIcon />
+                        <LinkedInIcon className='hover:text-[#FD0004]'/>
                     </IconButton>
                     <IconButton >
-                        <InstagramIcon />
+                        <InstagramIcon className='hover:text-[#FD0004]'/>
                     </IconButton>
 
                 </Box>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <Box className="w-full text-center">
                     {navItem.map((item) => (
                         <Link key={item} href={item.pathname}>
-                            <Button className='text-white hover:text-orange-400 text-[10px]'>{item.route}</Button>
+                            <Button className='text-white hover:text-[#FD0004] text-[10px]'>{item.route}</Button>
                         </Link>
                     ))}
                 </Box>

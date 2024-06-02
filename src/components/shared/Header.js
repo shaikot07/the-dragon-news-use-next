@@ -8,11 +8,11 @@ const Header = () => {
     return (
         <Box className="w-full my-5">
             <Container>
-                <Image src={headerImage} width={500} height={500} alt='header images' className='mx-auto' />
+                <Image src={headerImage} width={400} height={400} alt='header images' className='mx-auto' />
                 <Typography variant='body2' color='gray' textAlign="center" className='my-2'>
                     Journalism Without Fear or Favour
                 </Typography>
-                <Typography >
+                <Typography variant='body2' color='gray' textAlign="center" >
                     { currentDate}
                 </Typography>
 

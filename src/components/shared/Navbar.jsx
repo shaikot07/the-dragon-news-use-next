@@ -50,14 +50,14 @@ function Navbar() {
     return (
         <>
             <Header></Header>
-            <AppBar position="static">
+            <AppBar position="static" className="bg-black">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Image src={Logo} width={100} height={100} alt="logo" />
                         <Box className="w-full text-center">
                             {navItem.map((item) => (
                                 <Link key={item} href={item.pathname}>
-                                    <Button className='text-white hover:text-orange-400'>{item.route}</Button>
+                                    <Button className='text-white hover:text-[#FD0004]'>{item.route}</Button>
                                 </Link>
                             ))}
                         </Box>
@@ -68,19 +68,19 @@ function Navbar() {
                         }}>
                             <Stack direction="row">
                                 <IconButton >
-                                    <FacebookIcon />
+                                    <FacebookIcon className='hover:text-[#FD0004]'/>
                                 </IconButton>
                                 <IconButton >
-                                    <TwitterIcon />
+                                    <TwitterIcon className='hover:text-[#FD0004]'/>
                                 </IconButton>
                                 <IconButton >
-                                    <YouTubeIcon />
+                                    <YouTubeIcon className='hover:text-[#FD0004]'/>
                                 </IconButton>
                                 <IconButton >
-                                    <LinkedInIcon />
+                                    <LinkedInIcon className='hover:text-[#FD0004]'/>
                                 </IconButton>
                                 <IconButton >
-                                    <InstagramIcon />
+                                    <InstagramIcon className='hover:text-[#FD0004]'/>
                                 </IconButton>
                             </Stack>
                         </Box>
