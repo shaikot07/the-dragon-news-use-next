@@ -1,9 +1,15 @@
+import Image from 'next/image';
 import React from 'react';
-
+import loadingImg from '../assets/Loading_27.gif'
 const LoadingPage = () => {
     return (
         <div>
-            <h1>Loading...........something</h1>
+            <Image src={loadingImg}
+                alt='error img'
+                width={500}
+                height={300}
+                unoptimized={true}
+            />
         </div>
     );
 };
